@@ -42,7 +42,7 @@ $(stampdir)/stamp-prepare-tree-%: $(commonconfdir)/config.common.$(family) $(arc
 prepare-%: $(stampdir)/stamp-prepare-%
 	@echo Debug: $@
 # Used by developers to allow efficient pre-building without fakeroot.
-build-%: $(stampdir)/stamp-build-%
+build-%: $(stampdir)/stamp-install-%
 	@echo Debug: $@
 
 # Do the actual build, including image and modules
@@ -804,7 +804,7 @@ ifeq ($(any_signed),true)
 	dpkg-distaddfile $(signing_tar) raw-signing -
 endif
 
-build-arch-deps-$(do_flavour_image_package) += $(addprefix $(stampdir)/stamp-build-,$(flavours))
+build-arch-deps-$(do_flavour_image_package) += $(addprefix $(stampdir)/stamp-install-,$(flavours))
 build-arch: $(build-arch-deps-true)
 	@echo Debug: $@
 

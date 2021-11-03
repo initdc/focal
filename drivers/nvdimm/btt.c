@@ -1546,7 +1546,6 @@ static int btt_blk_init(struct btt *btt)
 		int rc = nd_integrity_init(btt->btt_disk, btt_meta_size(btt));
 
 		if (rc) {
-			del_gendisk(btt->btt_disk);
 			put_disk(btt->btt_disk);
 			blk_cleanup_queue(btt->btt_queue);
 			return rc;

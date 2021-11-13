@@ -528,7 +528,7 @@ static int corsairpsu_probe(struct hid_device *hdev, const struct hid_device_id 
 	}
 
 	priv->hwmon_dev = hwmon_device_register_with_info(&hdev->dev, "corsairpsu", priv,
-							  &corsairpsu_chip_info, 0);
+							  &corsairpsu_chip_info, NULL);
 
 	if (IS_ERR(priv->hwmon_dev)) {
 		ret = PTR_ERR(priv->hwmon_dev);

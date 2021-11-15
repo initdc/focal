@@ -637,7 +637,7 @@ static int scmi_sensor_config_get(const struct scmi_handle *handle,
 	if (ret)
 		return ret;
 
-	put_unaligned_le32(cpu_to_le32(sensor_id), t->tx.buf);
+	put_unaligned_le32(sensor_id, t->tx.buf);
 	ret = scmi_do_xfer(handle, t);
 	if (!ret) {
 		struct sensors_info *si = handle->sensor_priv;

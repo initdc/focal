@@ -461,7 +461,7 @@ static int stm32_i2s_configure_clock(struct snd_soc_dai *cpu_dai,
 		if (ret < 0)
 			return ret;
 
-		nb_bits = frame_len * ((cgfr & I2S_CGFR_CHLEN) + 1);
+		nb_bits = frame_len * (FIELD_GET(I2S_CGFR_CHLEN, cgfr) + 1);
 		tmp = DIV_ROUND_CLOSEST(i2s_clock_rate, (nb_bits * rate));
 	}
 

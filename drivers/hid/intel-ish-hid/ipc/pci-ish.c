@@ -224,7 +224,8 @@ static void __maybe_unused ish_resume_handler(struct work_struct *work)
 	int ret;
 
 	if (ish_should_leave_d0i3(pdev) && !dev->suspend_flag) {
-		disable_irq_wake(pdev->irq);
+		if (device_may_wakeup(&pdev->dev))
+			disable_irq_wake(pdev->irq);
 
 		ishtp_send_resume(dev);
 
@@ -293,7 +294,8 @@ static int __maybe_unused ish_suspend(struct device *device)
 			 */
 			pci_save_state(pdev);
 
-			enable_irq_wake(pdev->irq);
+			if (device_may_wakeup(&pdev->dev))
+				enable_irq_wake(pdev->irq);
 		}
 	} else {
 		/*

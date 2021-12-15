@@ -274,7 +274,7 @@ static int mv88e6xxx_port_set_speed_duplex(struct mv88e6xxx_chip *chip,
 	if (err)
 		return err;
 
-	if (speed)
+	if (speed != SPEED_UNFORCED)
 		dev_dbg(chip->dev, "p%d: Speed set to %d Mbps\n", port, speed);
 	else
 		dev_dbg(chip->dev, "p%d: Speed unforced\n", port);

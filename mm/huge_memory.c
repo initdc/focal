@@ -2499,8 +2499,6 @@ static void __split_huge_page(struct page *page, struct list_head *list,
 	/* lock lru list/PageCompound, ref freezed by page_ref_freeze */
 	lruvec = lock_page_lruvec(head);
 
-	ClearPageHasHWPoisoned(head);
-
 	for (i = nr - 1; i >= 1; i--) {
 		__split_huge_page_tail(head, i, lruvec, list);
 		/* Some pages can be beyond i_size: drop them from page cache */

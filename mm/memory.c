@@ -3924,15 +3924,6 @@ vm_fault_t finish_fault(struct vm_fault *vmf)
 		page = vmf->page;
 
 	/*
-	 * Just backoff if any subpage of a THP is corrupted otherwise
-	 * the corrupted page may mapped by PMD silently to escape the
-	 * check.  This kind of THP just can be PTE mapped.  Access to
-	 * the corrupted subpage should trigger SIGBUS as expected.
-	 */
-	if (unlikely(PageHasHWPoisoned(page)))
-		return ret;
-
-	/*
 	 * check even for read faults because we might have lost our CoWed
 	 * page
 	 */

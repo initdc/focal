@@ -634,6 +634,9 @@ linux-hwe-5.11 (5.11.0-60.60) focal; urgency=medium
     - [Packaging] update variants
     - [Packaging] update update.conf
 
+  * aufs build is broken on 5.11 kernels (LP: #1958228)
+    - SAUCE: aufs: v5.16-rc1, use inode_update_time helper
+
   [ Ubuntu: 5.11.0-50.56 ]
 
   * hirsute:linux 5.11.0-45.49 fails to boot (LP: #1956984)

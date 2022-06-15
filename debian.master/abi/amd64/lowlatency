@@ -23525,6 +23525,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0xa2abfa06	switchdev_handle_port_obj_del
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2af54b3	irq_from_evtchn
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2b99209	alarm_start
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2caf033	phy_configure
+EXPORT_SYMBOL_GPL	 vmlinux 0xa2d0b59d	mmio_stale_data_clear
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2e1b3ef	trace_printk_init_buffers
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2e575d9	wm831x_reg_write
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2e71a02	devm_usb_get_phy_by_phandle

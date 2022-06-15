@@ -23573,6 +23573,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0xa2af54b3	irq_from_evtchn
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2b99209	alarm_start
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2c0c6ac	gpiod_export
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2c74c8f	agp_add_bridge
+EXPORT_SYMBOL_GPL	 vmlinux 0xa2d0b59d	mmio_stale_data_clear
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2da2878	devlink_port_register
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2e1b3ef	trace_printk_init_buffers
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2e6c88f	ata_dummy_port_ops

@@ -23577,6 +23577,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0xa2b99209	alarm_start
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2bbd3c2	udp_abort
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2c04827	devm_pm_opp_register_set_opp_helper
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2cce5f4	dm_suspended
+EXPORT_SYMBOL_GPL	 vmlinux 0xa2d0b59d	mmio_stale_data_clear
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2d73dc1	regmap_raw_write
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2e1b3ef	trace_printk_init_buffers
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2f4c82c	rio_local_get_device_id

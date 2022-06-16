@@ -23566,6 +23566,7 @@ EXPORT_SYMBOL_GPL	 vmlinux 0xa2c0e8ff	badblocks_check
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2c8ad13	dev_pm_opp_attach_genpd
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2c92ad7	devm_acpi_dma_controller_free
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2cbee65	ata_pci_bmdma_init
+EXPORT_SYMBOL_GPL	 vmlinux 0xa2d0b59d	mmio_stale_data_clear
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2e1b3ef	trace_printk_init_buffers
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2f7487f	hv_is_hibernation_supported
 EXPORT_SYMBOL_GPL	 vmlinux 0xa2fc7fa8	irq_domain_translate_onecell
